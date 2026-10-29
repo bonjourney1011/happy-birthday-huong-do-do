@@ -67,7 +67,17 @@ main { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; paddin
 .happy { margin: 0; letter-spacing: .3em; text-transform: uppercase; font-size: 13px; font-weight: 700; color: var(--la); }
 .dau-trang h1 { font-family: var(--chu-viet); font-size: clamp(48px, 11vw, 84px); color: var(--la-dam); line-height: 1.1; }
 .ten-khac { margin: 0; font-family: var(--chu-viet); font-size: 24px; color: #b8913a; }
-.phu-de { margin: 12px 0 0; color: var(--chu-nhat); font-weight: 600; }
+.ngay { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 14px; }
+.ngay span { font-size: 34px; font-weight: 700; color: var(--la-dam); }
+.ngay svg { width: 30px; height: 30px; animation: tho 5s ease-in-out infinite; }
+.loi-chuc {
+  max-width: 640px; margin: 18px auto 0; padding: 20px 24px; border-radius: 22px;
+  background: var(--the); box-shadow: var(--bong); line-height: 1.65; font-weight: 600; color: var(--chu-nhat);
+}
+.loi-chuc p { margin: 0 0 8px; }
+.loi-chuc p:first-child { font-family: var(--chu-viet); font-size: 28px; color: var(--la-dam); }
+.ky-ten-chuc { text-align: right; font-family: var(--chu-viet); font-size: 22px; color: #b8913a; }
+.mat-cuoi { font-family: "Quicksand", sans-serif; font-size: .75em; font-weight: 700; margin-left: 2px; }
 
 .san-khau { display: grid; gap: 18px; }
 @media (min-width: 880px) { .san-khau { grid-template-columns: 1.55fr 1fr; align-items: start; } }
