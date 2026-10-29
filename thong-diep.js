@@ -32,5 +32,5 @@ window.THONG_DIEP = [
   "Chị gửi bài này cho một người chị thương đi. Niềm vui chia ra lại to hơn.",
   "Em mong tuổi mới của chị có thật nhiều buổi sáng thong thả, một ly cà phê ngon và một bài hát hay.",
   "Chị nghỉ năm phút rồi làm tiếp cũng không sao. Mọi thứ vẫn ổn.",
-  "Chúc Hương Đô Đô tuổi mới thật nhiều niềm vui, và luôn thơm như tên của chị.",
+  "Chúc Hương Đô Đô tuổi mới thật nhiều niềm vui, sức khỏe dồi dào và dự định nào cũng thành.",
 ];
