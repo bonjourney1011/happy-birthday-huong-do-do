@@ -1,0 +1,36 @@
+// Mỗi lần mở một bài, trang rút ngẫu nhiên một lá thư trong danh sách này (hết lượt mới lặp lại).
+// Sửa, thêm, bớt thoải mái — mỗi dòng là một lá thư.
+window.NGUOI_GUI = "em";
+
+window.THONG_DIEP = [
+  "Chị đã làm rất tốt rồi. Hôm nay chị cho phép mình nghỉ một chút nhé.",
+  "Tuổi mới, em chúc chị ngủ ngon hơn và ít phải lo hơn.",
+  "Bài này dài chừng bốn phút. Chị thử thở chậm theo nhạc trong bốn phút đó xem.",
+  "Chị cười đẹp lắm. Em mong năm nay chị cười nhiều hơn năm ngoái.",
+  "Có những ngày mệt thì chị cứ mệt. Mai mình lại bắt đầu.",
+  "Chị không cần giỏi mọi thứ. Chị chỉ cần vui với những thứ chị chọn.",
+  "Chị luôn dịu dàng với mọi người. Năm nay chị dịu dàng với bản thân nữa nhé.",
+  "Chị uống một cốc nước đi. Em nhắc thật đấy.",
+  "Hoa nhài nở về đêm và thơm rất lâu. Em mong chị cũng bền bỉ và thơm thảo như thế.",
+  "Chúc chị một năm nhiều chuyến đi, nhiều bữa ngon và ít deadline gấp.",
+  "Nếu hôm nay có gì không vui, chị để nó trôi theo bài hát này.",
+  "Chị xứng đáng nhận lại những điều tử tế mà chị đã cho đi.",
+  "Em chúc chị khỏe trước, rồi mới đến giàu và đẹp. Khỏe thì mọi thứ khác dễ hơn.",
+  "Chị nhắm mắt lại một chút. Bài này chị nghe bằng tai thôi, không cần nhìn.",
+  "Em mong năm nay chị gặp toàn người tốt. Người chưa tốt thì chị cứ nhẹ nhàng đi qua.",
+  "Mỗi lần chị mở trang này là em đang ôm chị một cái từ xa.",
+  "Tin nhắn chưa cần trả lời ngay đâu chị. Chị nghe hết bài này đã.",
+  "Tuổi mới chị cứ đi chậm lại một chút. Những thứ quan trọng vẫn sẽ chờ chị.",
+  "Em chúc chị lúc nào cũng có người nấu cho chị một bữa cơm nóng.",
+  "Chị ở đâu thì không khí ở đó dễ chịu hơn. Em để ý điều này lâu rồi.",
+  "Hôm nay chị được ăn thêm một miếng bánh. Hai miếng cũng được.",
+  "Chị cứ mơ to vào. Em tin chị làm được.",
+  "Em mong sáng nào chị thức dậy cũng thấy háo hức vì một điều nhỏ.",
+  "Nhạc hết thì mình bật bài khác. Buồn hết thì mình làm việc khác. Chị đừng giữ nỗi buồn lâu nhé.",
+  "Em chúc chị bình yên. Bình yên không phải là không có chuyện gì, mà là có chuyện gì chị cũng vững.",
+  "Cảm ơn chị đã đến với thế giới này. Thế giới có thêm một người dễ thương.",
+  "Chị gửi bài này cho một người chị thương đi. Niềm vui chia ra lại to hơn.",
+  "Năm nay chị đừng so mình với ai cả. Chị chỉ cần vui hơn chị của năm ngoái.",
+  "Chị nghỉ năm phút rồi làm tiếp cũng không sao. Mọi thứ vẫn ổn.",
+  "Chúc Hương Đô Đô tuổi mới thật nhiều niềm vui, và luôn thơm như tên của chị.",
+];

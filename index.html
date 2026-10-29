@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Góc thư giãn của Hương Đô Đô 🤍</title>
+  <meta name="description" content="Chúc mừng sinh nhật chị Hương — Jasmine Đỗ. Một góc nhỏ để nghe nhạc và đọc thư.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌼</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Bộ hình vẽ dùng lại: hoa nhài và các nút điều khiển -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="hoa-nhai" viewBox="-50 -50 100 100">
+      <g fill="#fffdf7" stroke="#e6dcc4" stroke-width="1.5">
+        <ellipse cy="-24" rx="12" ry="23"/>
+        <ellipse cy="-24" rx="12" ry="23" transform="rotate(72)"/>
+        <ellipse cy="-24" rx="12" ry="23" transform="rotate(144)"/>
+        <ellipse cy="-24" rx="12" ry="23" transform="rotate(216)"/>
+        <ellipse cy="-24" rx="12" ry="23" transform="rotate(288)"/>
+      </g>
+      <circle r="8" fill="#f2c45a"/>
+    </symbol>
+    <symbol id="i-phat" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></symbol>
+    <symbol id="i-dung" viewBox="0 0 24 24"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor"/></symbol>
+    <symbol id="i-tiep" viewBox="0 0 24 24"><path d="M6 6l8.5 6L6 18zM16 6h2v12h-2z" fill="currentColor"/></symbol>
+    <symbol id="i-lui" viewBox="0 0 24 24"><path d="M18 6l-8.5 6L18 18zM6 6h2v12H6z" fill="currentColor"/></symbol>
+    <symbol id="i-tron" viewBox="0 0 24 24"><path d="M4 7h3.5c2 0 3.2.9 4.3 2.6l2.4 4.8c.9 1.7 2 2.6 3.8 2.6H20M4 17h3.5c1.4 0 2.4-.5 3.2-1.4M13.3 8.4C14.1 7.5 15 7 16.5 7H20M17.5 4.5 20 7l-2.5 2.5M17.5 14.5 20 17l-2.5 2.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <div id="man-mo" class="man-mo">
+    <svg class="hoa-to"><use href="#hoa-nhai"/></svg>
+    <p class="loi-moi">Có một góc nhỏ để chị Hương<br>nghe nhạc và thở chậm lại</p>
+    <button id="nut-mo" class="nut-mo">Mở góc thư giãn</button>
+  </div>
+
+  <div class="nen-hoa" aria-hidden="true">
+    <svg><use href="#hoa-nhai"/></svg><svg><use href="#hoa-nhai"/></svg><svg><use href="#hoa-nhai"/></svg>
+    <svg><use href="#hoa-nhai"/></svg><svg><use href="#hoa-nhai"/></svg><svg><use href="#hoa-nhai"/></svg>
+    <svg><use href="#hoa-nhai"/></svg><svg><use href="#hoa-nhai"/></svg><svg><use href="#hoa-nhai"/></svg>
+  </div>
+
+  <main>
+    <header class="dau-trang">
+      <p class="happy">Happy Birthday</p>
+      <h1>Hương Đô Đô</h1>
+      <p class="ten-khac">Jasmine Đỗ</p>
+      <p class="phu-de">Chúc chị tuổi mới bình yên và thơm thảo như hoa nhài 🤍</p>
+    </header>
+
+    <section class="san-khau">
+      <div class="may-phat the">
+        <div class="khung-video"><div id="video"></div></div>
+        <div class="dang-nghe">
+          <p class="nhan"><span class="song-nhac" aria-hidden="true"><i></i><i></i><i></i></span> Đang nghe</p>
+          <h2 id="ten-bai">Chọn một bài chị thích</h2>
+          <p id="ca-si" class="ca-si-to">&nbsp;</p>
+        </div>
+        <div class="dieu-khien">
+          <button id="nut-lui" class="nut-tron-vien" aria-label="Bài trước"><svg><use href="#i-lui"/></svg></button>
+          <button id="nut-phat" class="nut-chinh" aria-label="Phát"><svg><use href="#i-phat"/></svg></button>
+          <button id="nut-tiep" class="nut-tron-vien" aria-label="Bài tiếp"><svg><use href="#i-tiep"/></svg></button>
+          <button id="nut-tron" class="nut-tron-bai" aria-pressed="false"><svg><use href="#i-tron"/></svg> Trộn bài</button>
+        </div>
+        <p id="bao-loi" class="bao-loi" role="status" hidden></p>
+      </div>
+
+      <article id="la-thu" class="la-thu the" aria-live="polite">
+        <p class="nhan">💌 Lá thư của bài này</p>
+        <p id="noi-dung-thu" class="noi-dung-thu">Mỗi bài chị mở sẽ kèm một lá thư em viết. Chị bấm phát một bài nhé.</p>
+        <p id="ky-ten" class="ky-ten"></p>
+        <button id="nut-rut-thu" class="nut-phu">Rút lá khác</button>
+      </article>
+    </section>
+
+    <section class="danh-sach the">
+      <div class="dau-danh-sach">
+        <h2>Danh sách nhạc</h2>
+        <div id="bo-loc" class="bo-loc">
+          <button class="chip" data-loc="tat-ca">Tất cả <b></b></button>
+          <button class="chip" data-loc="den">Đen <b></b></button>
+          <button class="chip" data-loc="vu">Vũ <b></b></button>
+          <button class="chip" data-loc="them">Chị thêm <b></b></button>
+        </div>
+      </div>
+
+      <form id="form-them" class="form-them">
+        <input id="o-link" type="text" inputmode="url" autocomplete="off" required
+               placeholder="Dán link YouTube bài chị thích…" aria-label="Link YouTube">
+        <button class="nut-chinh-chu">Thêm bài</button>
+      </form>
+      <p id="bao-them" class="bao-them" aria-live="polite"></p>
+
+      <ol id="ds-bai" class="ds-bai"></ol>
+      <p id="ds-trong" class="ds-trong" hidden>Chưa có bài nào ở đây. Chị dán link YouTube ở ô phía trên để thêm nhé.</p>
+    </section>
+
+    <footer>Làm tặng chị Hương · Jasmine Đỗ · 2026</footer>
+  </main>
+
+  <template id="mau-bai">
+    <li>
+      <button class="bai" type="button">
+        <img alt="" loading="lazy" width="112" height="63">
+        <span class="chu"><span class="ten"></span><span class="ca-si"></span></span>
+      </button>
+      <button class="nut-xoa" type="button" aria-label="Xoá bài này">✕</button>
+    </li>
+  </template>
+
+  <script src="danh-sach-bai-hat.js"></script>
+  <script src="thong-diep.js"></script>
+  <script src="kho-bai-them.js"></script>
+  <script src="la-thu.js"></script>
+  <script src="trinh-phat.js"></script>
+  <script src="https://www.youtube.com/iframe_api" async></script>
+</body>
+</html>
