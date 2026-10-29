@@ -1,6 +1,6 @@
 // Mỗi lần mở một bài, trang rút ngẫu nhiên một lá thư trong danh sách này (hết lượt mới lặp lại).
 // Sửa, thêm, bớt thoải mái — mỗi dòng là một lá thư.
-window.NGUOI_GUI = "em";
+window.NGUOI_GUI = "em Mo Thuần iu dấu^^";
 
 window.THONG_DIEP = [
   "Chị đã làm rất tốt rồi. Hôm nay chị cho phép mình nghỉ một chút nhé.",
