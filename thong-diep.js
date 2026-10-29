@@ -30,7 +30,7 @@ window.THONG_DIEP = [
   "Em chúc chị bình yên. Bình yên không phải là không có chuyện gì, mà là có chuyện gì chị cũng vững.",
   "Cảm ơn chị đã đến với thế giới này. Thế giới có thêm một người dễ thương.",
   "Chị gửi bài này cho một người chị thương đi. Niềm vui chia ra lại to hơn.",
-  "Năm nay chị đừng so mình với ai cả. Chị chỉ cần vui hơn chị của năm ngoái.",
+  "Em mong tuổi mới của chị có thật nhiều buổi sáng thong thả, một ly cà phê ngon và một bài hát hay.",
   "Chị nghỉ năm phút rồi làm tiếp cũng không sao. Mọi thứ vẫn ổn.",
   "Chúc Hương Đô Đô tuổi mới thật nhiều niềm vui, và luôn thơm như tên của chị.",
 ];
